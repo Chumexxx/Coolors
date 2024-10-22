@@ -1,0 +1,54 @@
+.companiesContainer{
+    margin-top: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+.imagesDiv{
+    width: 100%;
+}
+
+#companyImg{
+    width: 80px;
+    margin: 20px;
+    
+}
+
+.textDiv{
+    font-size: 25px;
+}
+
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+    #companyImg {
+        width: 70px;
+        margin: 15px; 
+    }
+
+    .textDiv {
+        font-size: 22px; 
+    }
+}
+
+@media (max-width: 768px) {
+    #companyImg {
+        width: 60px;
+        margin: 10px; 
+    }
+
+    .textDiv {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #companyImg {
+        width: 50px;
+        margin: 5px;
+    }
+
+    .textDiv {
+        font-size: 18px; /* Smaller font size for very small screens */
+    }
+}

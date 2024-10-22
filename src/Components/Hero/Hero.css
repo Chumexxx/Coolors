@@ -1,0 +1,162 @@
+.heroContainer{
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    gap: 100px;
+    width: 1000px;
+}
+
+.heroImage {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImage1{
+    display: none;
+}
+
+.heroImage2{
+    display: none;
+}
+
+.super{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+}
+
+.lorem{
+    color: gray;
+    font-size: 20px;
+}
+
+.heroText{
+    margin-left: 250px;
+    width: 500px;
+}
+
+.btns{
+    border: solid ;
+}
+
+.genBtn{
+    background-color: blue;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.exploreBtn{
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.prodBtn{
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 300;
+    color: orange;
+    border: 1px solid orange;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+}
+
+@media (max-width: 1024px) {
+    .heroText {
+        margin-left: 330px;
+        width: 450px;
+    }
+
+    .super {
+        font-size: 40px;
+        line-height: 50px;
+        margin-top: 400px;
+    }
+
+    .lorem {
+        font-size: 18px;
+    }
+    .heroImage{
+        display: none;
+    }
+
+    .heroImage1{
+        display: flex;
+        width: 600px;
+        position: relative;
+        right: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroContainer {
+        display: block;
+    }
+
+    .heroImage1{
+        display: none;
+    }
+
+    .heroText {
+        margin-left: 120px; 
+        padding: 0 20px; 
+    }
+
+    .heroImage2{
+        width: 500px;
+        display: flex;
+        left: 120px;
+    }
+
+    .super {
+        margin-top: 10px;
+        font-size: 40px;
+        line-height: 70px;
+    }
+
+    .lorem {
+        font-size: 16px;
+    }
+
+    .genBtn, .exploreBtn, .prodBtn {
+        width: 250px; 
+    }
+}
+
+/*
+
+@media (max-width: 480px) {
+    .heroContainer {
+        padding-top: 30px;
+        gap: 20px;
+    }
+
+    .super {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .lorem {
+        font-size: 14px;
+    }
+
+    .genBtn, .exploreBtn, .prodBtn {
+        width: 200px;
+        height: 35px;
+    }
+} */

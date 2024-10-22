@@ -1,0 +1,114 @@
+.appContainer{
+    padding-top: 50px;
+    display: flex;
+    padding-left: 170px;
+    padding-right: 200px;
+    box-sizing: border-box;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 30px;
+}
+
+.appCard{
+    position: relative;
+    height: 250px;
+    width: 400px;
+    background-color: lightgrey;;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#initialText{
+    text-align: center;  
+}
+
+#hoverText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fff;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#appCard:hover #initialText {
+    opacity: 0;
+}
+  
+#appCard:hover #hoverText {
+    opacity: 1; 
+}
+
+#appImg{
+    width: 50px;
+} 
+
+#appImg {
+    width: 50px;
+}
+
+@media (max-width: 1024px) {
+    .appContainer {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .appCard {
+        height: 220px;
+        width: 350px;
+    }
+
+    #appImg {
+        width: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .appContainer {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .appCard {
+        height: 200px;
+        width: 300px;
+    }
+
+    #appImg {
+        width: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .appContainer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .appCard {
+        height: 180px;
+        width: 250px;
+    }
+
+    #appImg {
+        width: 35px;
+    }
+
+    #hoverText {
+        font-size: 18px;
+    }
+}

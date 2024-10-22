@@ -1,0 +1,131 @@
+/* .Container{
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a{
+        margin: 0 10px;
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    button{
+        height: 35px;
+        width: 80px;
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+    }
+}
+ */
+
+
+ .Container {
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Added padding for spacing */
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navs a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navs button {
+    height: 35px;
+    width: 80px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .Container {
+        flex-direction: column;
+        height: auto; /* Adjust height for stacking */
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 30px; /* Adjust logo size */
+        margin-bottom: 10px;
+    }
+
+    .navs {
+        flex-direction: column;
+    }
+
+    .navs a {
+        font-size: 14px; /* Adjust font size */
+        margin: 5px 0;
+    }
+
+    .navs button {
+        width: 100%; /* Make button full width */
+        height: 40px; /* Adjust button height */
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 25px; /* Further reduce logo size */
+    }
+
+    .navs a {
+        font-size: 13px; /* Adjust font size for smaller screens */
+    }
+
+    .navs button {
+        width: 100px; /* Adjust button width */
+    }
+}
